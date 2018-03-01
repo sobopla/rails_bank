@@ -11,7 +11,6 @@ class BankAccount < ApplicationRecord
   	if self.new_record?
   		self.balance = 0.00
   	end
-
   end
 
   def to_s
