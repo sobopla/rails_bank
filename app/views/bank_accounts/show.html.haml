@@ -3,6 +3,9 @@
   %small
     #{@bank_account.client}
 
+= button_tag :new_transaction, id: "btn-transaction", class: "btn btn-primary" do
+  New Transaction
+
 %table.table.table-bordered
   %head
     %tr
@@ -19,3 +22,5 @@
       %th
       %th Balance
       %th #{number_to_currency(@bank_account.balance)}
+
+= javascript_include_tag "bank_accounts/Show"
